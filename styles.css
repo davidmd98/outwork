@@ -560,12 +560,13 @@ h1{
 }
 
 #footer__logo{
+    font-family: "Brush Script MT";
     color: #fff;
     display: flex;
     align-items: center;
     cursor: pointer;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .footer__links{
