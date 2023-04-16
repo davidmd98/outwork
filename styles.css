@@ -250,9 +250,9 @@ h1{
 }
 
 .main__button{
-    font-size:  1rem;
+    font-size:  1.5rem;
     background-image:  linear-gradient(to top, #f77062 0%, #fe5156 100%);
-    padding: 14px 32px;
+    padding: 15px 35px;
     border: none;
     border-radius: 4px;
     color: #fff;
@@ -302,43 +302,135 @@ h1{
 
 /* About us*/
 
+.about {
+    background-color: #131313;
+    padding: 10rem 0;
+  }
+
 .about__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
     margin: 0 auto;
-    background-color: #141414;
+    height: 90%;
+    z-index: 1;
     width: 100%;
-    max-width: 100%;
+    max-width: 1300px;
     padding: 0 50px;
 }
 
-.about__container h1{
-    position: relative;
-    text-align: center;
-    font-size: 4rem;
-    padding-top: 175px;
-    align-items: center;
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+.about__content{
+    color: #fff;
+    width: 100%;
 }
 
-.about__container p{
-    position: relative;
-    font-size: 1.5rem;
-    justify-content: center;
-    padding: 30px 400px;
-    padding-bottom: 400px;
-    align-items: center;
-    background-color: #fff;
+.about__content h1 {
+    font-size: 2rem;
+    background-color: #fe3b6f;
+    background-image: linear-gradient(to top, #ff087b 0%, #ed1a52 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-}
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+  
+  .about__content h2 {
+    font-size: 3rem;
+    background: #ff8177; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #9114ff,
+      #da22ff
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #8f0eff,
+      #da22ff
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
+  
+  .about__content p {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  
+  .about__btn {
+    font-size: 1.5rem;
+    background: #833ab4;
+    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    padding: 15px 35px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+  }
+  
+  .about__btn a {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .about__btn:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ff1ead;
+    transition: all 0.35s;
+    border-radius: 4px;
+  }
+  
+  .about__btn:hover {
+    color: #fff;
+  }
+  
+  .about__btn:hover:after {
+    width: 100%;
+  }
+  
+  .about__img--container {
+    text-align: center;
+  }
+  
+  .about__img--card {
+    margin: 10px;
+    height: 500px;
+    width: 500px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+  }
+
+  .fa-calendar-day {
+    font-size: 14rem;
+  }
+
+  #card-2 {
+    background: #ff512f;
+    background: -webkit-linear-gradient(to right, #dd2476, #ff512f);
+    background: linear-gradient(to right, #dd2476, #ff512f);
+  }
 
 /* Mobile responsive */
 
