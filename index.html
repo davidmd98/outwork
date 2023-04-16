@@ -11,7 +11,7 @@
 <body>
     <nav class="navbar">
         <div class="navbar__container">
-            <a href="" id="navbar__logo">outwork</a>
+            <a href="#home" id="navbar__logo">outwork</a>
             <div class="navbar__toggle" id="mobile-menu">
                 <spna class="bar"></spna>
                 <spna class="bar"></spna>
@@ -19,10 +19,16 @@
             </div>
             <ul class="navbar__menu">
                 <li class="navbar__item">
-                    <a href="/" class="navbar__links">Home</a>
+                    <a href="#home" class="navbar__links">Home</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/tech.html" class="navbar__links">About</a>
+                    <a href="#about" class="navbar__links">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#functionalities" class="navbar__links">Funcionalidades</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#pricing" class="navbar__links">Precios</a>
                 </li>
                 <li class="navbar__button">
                     <a href="/" class="button">Sign up</a>
@@ -31,7 +37,7 @@
         </div>
     </nav>
     <!-- Hero section images from unDraw-->
-    <div class="main__container">
+    <div class="main__container" id="home">
         <div class="main__content">
             <h1>ALQUILAR SALAS DE REUNIONES</h1>
             <h2>A UN SOLO CLICK</h2>
@@ -42,8 +48,16 @@
             <img src="images/meeting.svg" alt="pic" id="main__img">
         </div>
     </div>
-    <!--Services section-- images from pexel-->
-    <div class="services">
+    <div class="about" id="about">
+        <div class="about__container">
+            <h1>Sobre nosotros</h1>
+            <p>Somos una startup de Barcelona que pretende facilitar el proceso de agendar una reunion y alquilar un espacio
+                para que así te puedas centrar en tu negocio.
+            </p>
+        </div>
+    </div>
+    <!--Services section-->
+    <div class="services" id="functionalities">       
         <h1>FUNCIONALIDADES</h1>
         <div class="services__container">
             <div class="services__card">
@@ -59,7 +73,7 @@
         </div>
     </div>
     <!--Subscription-plans-->
-    <div class="price__plannings">
+    <div class="price__plannings" id="pricing">
         <h1>Planes de precio</h1>
         <div class="price__plannings__container">
             <div class="price__plannings__card">

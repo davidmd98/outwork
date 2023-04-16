@@ -299,6 +299,47 @@ h1{
     width: 80%;
 }
 
+
+/* About us*/
+
+.about__container {
+    margin: 0 auto;
+    background-color: #141414;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 50px;
+}
+
+.about__container h1{
+    position: relative;
+    text-align: center;
+    font-size: 4rem;
+    padding-top: 175px;
+    align-items: center;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.about__container p{
+    position: relative;
+    font-size: 1.5rem;
+    justify-content: center;
+    padding: 30px 400px;
+    padding-bottom: 400px;
+    align-items: center;
+    background-color: #fff;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
 /* Mobile responsive */
 
 /* Services section */
@@ -312,6 +353,11 @@ h1{
 }
 
 .services h1{
+    position: relative;
+    text-align: center;
+    padding-top: 150px;
+    width: 100%;
+    bottom: 20px;
     background-color: #ff8177;
     background-image: linear-gradient(
         to right,
@@ -322,7 +368,6 @@ h1{
         #cf556c 78%,
         #b12a5b 100%);
     background-size: 100%;
-    margin-bottom: 5rem;
     font-size: 2.5rem;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -331,12 +376,14 @@ h1{
 }
 
 .services__container{
+    position: relative;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .services__card{
+    position: relative;
     margin: 1rem;
     height: 525px;
     width: 400px;
@@ -425,6 +472,8 @@ h1{
 }
 
 .price__plannings h1{
+    position: relative;
+    top: 80px;
     background-color: #ff8177;
     background-image: linear-gradient(
         to right,
@@ -444,6 +493,8 @@ h1{
 }
 
 .price__plannings__container{
+    position: relative;
+    top: 30px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
