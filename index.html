@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scroll.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,9 +15,9 @@
         <div class="navbar__container">
             <a href="#home" id="navbar__logo">outwork</a>
             <div class="navbar__toggle" id="mobile-menu">
-                <spna class="bar"></spna>
-                <spna class="bar"></spna>
-                <spna class="bar"></spna>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
             <ul class="navbar__menu">
                 <li class="navbar__item">
@@ -40,9 +42,9 @@
     <div class="main__container" id="home">
         <div class="main__content">
             <h1>ALQUILAR SALAS DE REUNIONES</h1>
-            <h2>A UN SOLO CLICK</h2>
+            <h2>A UN SÓLO CLICK</h2>
             <p>Conoce nuestras funcionalidades</p>
-            <button class="main__button"><a href="#about">Conócenos</a></button>
+            <button class="main__button"><a href="#about" class="smooth-scroll">Conócenos</a></button>
         </div>
         <div class="main__image--container">
             <img src="images/meeting.svg" alt="pic" id="main__img">
@@ -57,9 +59,9 @@
             </div>
             <div class="about__content">
                 <h1>¿Qué hacemos?</h1>
-                <h2>Te ayudamos a ajendar reuniones donde y cuando quieras</h2>
+                <h2>Te ayudamos a agendar reuniones dónde y cuándo quieras</h2>
                 <p>Pulsa y descubre nuestras funcionalidades</p>
-                <button class="about__btn"><a href="#functionalities">Funcionalidades</a></button>
+                <button class="about__btn smooth-scroll"><a href="#functionalities">Funcionalidades</a></button>
             </div>
         </div>
     </div>
@@ -69,13 +71,13 @@
         <div class="services__container">
             <div class="services__card">
                 <h2>ALQUILA UNA SALA</h2>
-                <p>Busca y alquila una sala estes donde estes</p>
+                <p>Busca y alquila una sala estes donde estés</p>
                 <img src="images/world.svg" alt="pic" id="service__img">             
                 <button class="service_btn"><a>Saber más</a></button>
             </div>
             <div class="services__card">
                 <h2>AGENDA UNA REUNIÓN</h2>
-                <p>Olvidate de las cadenas de mails para concretar fecha y hora de la reunion</p>
+                <p>Olvidate de las cadenas de mails para concretar fecha y hora de la reunión</p>
                 <img src="images/schedule.svg" alt="pic" id="service__img">
                 <button class="service_btn"><a>Saber más</a></button>
             </div>
