@@ -21,10 +21,10 @@
             </div>
             <ul class="navbar__menu">
                 <li class="navbar__item">
-                    <a href="#home" class="navbar__links">Home</a>
+                    <a href="#home" class="navbar__links">Inicio</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="#about" class="navbar__links">About</a>
+                    <a href="#about" class="navbar__links">Video</a>
                 </li>
                 <li class="navbar__item">
                     <a href="#functionalities" class="navbar__links">Funcionalidades</a>
@@ -33,21 +33,59 @@
                     <a href="#pricing" class="navbar__links">Precios</a>
                 </li>
                 <li class="navbar__button">
-                    <a href="" class="button">Sign up</a>
+                    <a href="" class="button">Regístrate</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <!-- Hero section images from unDraw-->
     <div class="main__container" id="home">
         <div class="main__content">
-            <h1>ALQUILAR SALAS DE REUNIONES</h1>
-            <h2>A UN SÓLO CLICK</h2>
-            <p>Conoce nuestras funcionalidades</p>
-            <button class="main__button"><a href="#about" class="smooth-scroll">Conócenos</a></button>
+            <div class="main__content--card">
+                <h1>Busca una sala en Outwork</h1>
+                <h2>Te esperan salas y espacios para todo tipo de reuniones y eventos.</h2>
+                <div class="box__content">
+                    <div class="label">
+                        Ubicación
+                    </div>
+                    <div class="input">
+                        Barcelona, España
+                    </div>
+                </div>
+                <div class="date__container">
+                    <div class="box__content">
+                        <div class="label">
+                            Fecha
+                        </div>
+                        <div class="input">
+                            Mayo, 18
+                        </div>
+                    </div>
+                    <div class="date__range__container">
+                        <div class="time__content">
+                            <div class="label">
+                                Inicio
+                            </div>
+                            <div class="input">
+                                10:00
+                            </div>
+                        </div>
+                        <div class="time__content">
+                            <div class="label">
+                                Fin
+                            </div>
+                            <div class="input">
+                                11:00
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="main__button"><a href="#about" class="smooth-scroll">Buscar</a></button>
+            </div>           
         </div>
-        <div class="main__image--container">
-            <img src="images/meeting.svg" alt="pic" id="main__img">
+        <div class="main__image">
+            <div class="main_image--card">
+                <img src="images/main_room.jpg" alt="pic" id="main__img">
+            </div>
         </div>
     </div>
     <div class="about" id="about">
@@ -91,7 +129,7 @@
     </div>
     <!--Subscription-plans-->
     <div class="price__plannings" id="pricing">
-        <h1>Planes de precio</h1>
+        <h1>PRECIOS</h1>
         <div class="price__plannings__container">
             <div class="price__plannings__card">
                 <h2>Basic</h2>
@@ -99,8 +137,8 @@
                 <button class="price_btn"><a>Empieza Gratis</a></button>
                 <ul class="functionalities__menu">
                     <h3>La cuenta Basic incluye:</h3>
-                    <li class="functionalities__item">Alquilar sala</li>
-                    <li class="functionalities__item">Agendar reuniones</li>
+                    <li class="functionalities__item"><i class="fas fa-check"></i>Alquilar sala</li>
+                    <li class="functionalities__item"><i class="fas fa-check"></i>Agendar reuniones</li>
                 </ul>
             </div>
             <div class="price__plannings__card">
@@ -109,10 +147,10 @@
                 <button class="price_btn"><a>Probar Gratis</a></button>
                 <ul class="functionalities__menu">
                     <h3>La cuenta Professional incluye:</h3>
-                    <li class="functionalities__item">Alquilar sala</li>
-                    <li class="functionalities__item">Agendar reuniones</li>
-                    <li class="functionalities__item">KPIs de las reuniones</li>
-                    <li class="functionalities__item">Resumen y acciones a las reuniones</li>
+                    <li class="functionalities__item"><i class="fas fa-check"></i>Alquilar sala</li>
+                    <li class="functionalities__item"><i class="fas fa-check"></i>Agendar reuniones</li>
+                    <li class="functionalities__item"><i class="fas fa-check"></i>KPIs de las reuniones</li>
+                    <li class="functionalities__item"><i class="fas fa-check"></i>Resumen y acciones a las reuniones</li>
                 </ul>
             </div>
             <div class="price__plannings__card">
@@ -121,13 +159,13 @@
                 <button class="price_btn"><a>Probar Gratis</a></button>
                 <ul class="functionalities__menu">
                     <h3>La cuenta Enterprise incluye:</h3>
-                    <li class="functionalities__item">Alquilar sala</li>
-                    <li class="functionalities__item">Agendar reuniones</li>
-                    <li class="functionalities__item">KPIs de las reuniones</li>
-                    <li class="functionalities__item">Resumen y acciones a las reuniones</li>
-                    <li class="functionalities__item">Descuentos personalizados</li>
-                    <li class="functionalities__item">Training de soft-skills</li>
-                    <li class="functionalities__item">Organización de evetos de teambuilding</li>
+                    <li class="functionalities__item"><i class="fas fa-check"></i>Alquilar sala</li>
+                    <li class="functionalities__item"><i class="fas fa-check"></i>Agendar reuniones</li>
+                    <li class="functionalities__item"><i class="fas fa-check"></i>KPIs de las reuniones</li>
+                    <li class="functionalities__item"><i class="fas fa-check"></i>Resumen y acciones a las reuniones</li>
+                    <li class="functionalities__item"><i class="fas fa-check"></i>Descuentos personalizados</li>
+                    <li class="functionalities__item"><i class="fas fa-check"></i>Training de soft-skills</li>
+                    <li class="functionalities__item"><i class="fas fa-check"></i>Organización de evetos de teambuilding</li>
                 </ul>
             </div>
         </div>

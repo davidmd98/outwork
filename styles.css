@@ -1,6 +1,4 @@
-h1 {
-  color: rgb(48, 192, 98);
-}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -32,10 +30,9 @@ h1 {
 }
 
 #navbar__logo {
-  font-family: "Monospace Monaco";
-  font-size: 4rem;
+  font-size: 3rem;
   background-color: #ffffff;
-  background-image: linear-gradient(to top, rgb(48, 192, 98) 0%, #ffb1 100%);
+  background-image: linear-gradient(to top, #009056 0%, #02c074 100%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -90,176 +87,125 @@ h1 {
   width: 100%;
   border: none;
   border-radius: 4px;
-  background: rgb(48, 192, 98);
+  background-image: linear-gradient(to top, #009056 0%, #02c074 100%);
   color: #fff;
 }
 
 .button:hover {
-  background: #37ffd4;
-  transition: all 0.3s ease;
+  background: #02c074;
 }
 
 .navbar__links:hover {
-  color: #37ffd4;
+  color: #02c074;
   transition: all 0.3s ease;
-}
-
-@media screen and (max-width: 960px) {
-  .navbar__container {
-    display: flex;
-    justify-content: center;
-    height: 80px;
-    z-index: 3;
-    width: 100%;
-    max-width: 1300px;
-    padding: 0;
-  }
-
-  .navbar__menu {
-    display: grid;
-    grid-template-columns: auto;
-    margin: 0;
-    width: 100%;
-    position: absolute;
-    top: -1000px;
-    opacity: 0;
-    transition: all 0.5s ease;
-    height: 50vh;
-    z-index: -1;
-    background: #defedf;
-  }
-
-  .navbar__menu.active {
-    background: #defedf;
-    top: 100%;
-    opacity: 1;
-    transition: all 0.5s ease;
-    z-index: 99;
-    height: 50vh;
-    font-size: 1.6rem;
-  }
-
-  #navbar_logo {
-    padding-left: 25px;
-  }
-
-  .bavbar__toggle .bar {
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    transition: all 0.3s ease-in-out;
-    background: #fff;
-  }
-
-  .navbar__item {
-    width: 100%;
-  }
-
-  .navbar__links {
-    text-align: center;
-    padding: 2rem;
-    width: 100%;
-    display: table;
-  }
-
-  #mobile-menu {
-    position: absolute;
-    top: 20%;
-    right: 5%;
-    transform: translate(5%, 20%);
-  }
-
-  .navbar__button {
-    padding-bottom: 2rem;
-  }
-
-  .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    height: 80px;
-    margin: 0;
-  }
-
-  .navbar__toggle.bar {
-    display: block;
-    cursor: pointer;
-  }
-
-  #mobile-menu.is-active .bar:nth-child(2) {
-    opacity: 0;
-  }
-
-  #mobile-menu.is-active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-
-  #mobile-menu.is-active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
 }
 
 /* Hero section */
 
-.main {
-  background-color: #141414;
-}
-
 .main__container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  height: 98vh;
+  height: 85vh;
   background-color: #ffffff;
   z-index: 1;
   width: 100%;
   max-width: 100%;
   padding: 0 50px;
+  position: relative;
+}
+
+.main__content{
+  z-index: 2;
+  position: relative; /* add a relative position to the card */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+  transform: translate(15%, 0%); 
+  height: 60%;
+}
+
+.main__content--card{
+   padding: 32px;
+  
 }
 
 .main__content h1 {
-  font-size: 4rem;
-  background-color: #89ff77;
-  background-image: linear-gradient(to top, #08ff8c 0%, #99ffac 100%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  position: relative;
+  font-size: 1.8rem;
+  color: #000000;
 }
 
 .main__content h2 {
-  font-size: 4rem;
-  background-color: #77ff82;
-  background-image: linear-gradient(to top, #31f5ff 0%, #21d4fd 100%);
+  position: relative;
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: #000000;
   background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  padding-top: 1rem;
 }
 
-.main__content p {
+.box__content{
   margin-top: 1rem;
-  font-size: 2rem;
-  font-weight: 700;
-  color: #fff;
+  padding: 10px 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 7vh;
+}
+
+.label{
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+
+.input{
+  font-weight: lighter;
+  font-size: 1.2rem;
+}
+
+.date__container{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.date__range__container{
+  margin-left: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1rem;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 7vh;
+}
+
+.date__range__container > * {
+  border-right: 1.5px solid grey; /* establece la línea roja para todas las columnas */
+}
+
+.date__range__container > *:nth-child(2n) {
+  border-right: none; /* elimina la línea roja de la última columna */
+}
+
+.time__content{
+  padding-left: 10px;
 }
 
 .main__button {
-  font-size: 1.5rem;
-  background-image: linear-gradient(to top, #31f5ff 0%, #21d4fd 100%);
+  position: relative;
+  font-size: 1.4rem;
+  background-image: linear-gradient(to top, #009056 0%, #02c074 100%);
   padding: 15px 35px;
   border: none;
   border-radius: 4px;
   color: #fff;
-  margin-top: 2rem;
+  margin-top: 1rem;
   cursor: pointer;
   position: relative;
-  transition: all 0.35s;
+  max-width: 100%;
+  width: 100%;
   outline: none;
 }
 
@@ -270,33 +216,23 @@ h1 {
   text-decoration: none;
 }
 
-.main__button:after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: #37ffa5;
-  transition: all 0.35s;
-  border-radius: 4px;
-}
-
 .main__button:hover {
-  color: #fff;
+  background: #02c074;
 }
 
-.main__button:hover:after {
-  width: 100%;
+.main__image{
+  z-index: 1;
+  grid-column-start: 2;
 }
 
-.main__img--container {
+.main__image--container {
   text-align: center;
 }
 
 #main__img {
-  height: 80%;
-  width: 80%;
+  border-radius: 10px;
+  height: 40%;
+  width: 100%;
 }
 
 /* About us*/
@@ -568,10 +504,10 @@ h1 {
 .price__plannings h1 {
   position: relative;
   top: 80px;
-  background-color: #000000;
+  background-image: linear-gradient(to top, #009056 0%, #02c074 100%);
   background-size: 100%;
   margin-bottom: 5rem;
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -580,7 +516,7 @@ h1 {
 
 .price__plannings__container {
   position: relative;
-  top: 30px;
+  top: 10px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -590,11 +526,8 @@ h1 {
   margin: 1rem;
   height: 525px;
   width: 300px;
-  background-image: linear-gradient(
-    to bottom,
-    rgb(255, 255, 255) 0%,
-    rgb(160, 160, 160) 100%
-  );
+  border: 1px solid grey;
+  background-image: #fff;
   background-size: cover;
   position: relative;
   border-radius: 10px;
@@ -638,6 +571,11 @@ h1 {
   font-size: 0.8rem;
 }
 
+.fa-check{
+  color: black;
+  padding-right: 5px;
+}
+
 .price_btn a {
   position: relative;
   z-index: 2;
@@ -651,7 +589,7 @@ h1 {
   border: none;
   outline: none;
   border-radius: 4px;
-  background: #62c8f7;
+  background-image: linear-gradient(to top, #009056 0%, #02c074 100%);
   position: absolute;
   top: 150px;
   left: 30px;
@@ -660,24 +598,8 @@ h1 {
   cursor: pointer;
 }
 
-.price__plannings__card button:after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: #4837ff;
-  transition: all 0.35s;
-  border-radius: 4px;
-}
-
 .price__plannings__card button:hover {
-  color: #fff;
-}
-
-.price__plannings__card button:hover:after {
-  width: 100%;
+  background: #02c074;
 }
 
 .price__plannings__card ul {
@@ -796,47 +718,4 @@ h1 {
 
 .website__rigths {
   color: #fff;
-}
-
-@media screen and (max-width: 820px) {
-  .footer__links {
-    padding-top: 2rem;
-  }
-
-  #footer__logo {
-    margin-bottom: 2rem;
-  }
-
-  .website__rigths {
-    margin-bottom: 2rem;
-  }
-
-  .footer__links--wrapper {
-    flex-direction: column;
-  }
-
-  .social__media--wrap {
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .footer__link--items {
-    margin: 0;
-    padding: 10px;
-    width: 100%;
-  }
-}
-
-.smooth-scroll {
-  transition: all 0.3s ease-in-out;
-}
-
-.smooth-scroll:hover {
-  cursor: pointer;
-}
-
-/* smooth scroll on click */
-.smooth-scroll[href^="#"] {
-  scroll-behavior: smooth;
 }
