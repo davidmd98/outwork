@@ -343,16 +343,37 @@
 /* Video */
 
 .video__container{
-  padding: 50px 150px;
-  height: 80%;
-  width: 80%;
+  padding: 0 150px;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.video_eslogan--container{
+  text-align: center;
+}
+
+.video_eslogan--container h2{
+  font-weight: lighter;
+  font-size: 2.5rem;
+  padding: 5px;
+}
+
+#conect {
+  font-weight: bold;
+  background-image: linear-gradient(to top, #009056 0%, #02c074 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .video__viewer{
-  height: 90%;
+  height: 100%;
 }
 
 /* Price planning */
@@ -481,7 +502,6 @@
 }
 
 #footer__logo {
-  font-family: "Brush Script MT";
   color: #fff;
   display: flex;
   align-items: center;
