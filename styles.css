@@ -259,12 +259,13 @@
   position: relative;
   color: black;
   background-size: 100%;
-  margin: 1rem;
   font-size: 2.7rem;
+  margin-top: 1rem;
 }
 
 .service_section h2{
   font-weight: lighter;
+  margin: 1rem;
 }
 
 /* services */
@@ -286,7 +287,7 @@
   display: grid;
   align-items: center;
   justify-content: center;
-  display: flex;
+  display: grid;
   margin: 0 auto;
   background-color: #ffffff;
   z-index: 1;
@@ -294,14 +295,13 @@
   max-width: 100%;
   padding: 0 150px;
   position: relative;
+  grid-template-columns: 1fr 1fr;
 }
 
 .service__img--container{
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 80%;
-  height: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
