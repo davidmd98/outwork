@@ -340,6 +340,21 @@
   -moz-text-fill-color: transparent;
 }
 
+/* Video */
+
+.video__container{
+  padding: 50px 150px;
+  height: 80%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video__viewer{
+  height: 90%;
+}
+
 /* Price planning */
 
 .price__plannings__container {
