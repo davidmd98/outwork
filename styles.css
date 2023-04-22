@@ -182,11 +182,11 @@
 }
 
 .date__range__container > * {
-  border-right: 1.5px solid grey; /* establece la línea roja para todas las columnas */
+  border-right: 1.5px solid grey; 
 }
 
 .date__range__container > *:nth-child(2n) {
-  border-right: none; /* elimina la línea roja de la última columna */
+  border-right: none; 
 }
 
 .time__content{
@@ -243,23 +243,101 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: 90vh;
+  position: relative;
 }
 
-.section h1 {
+.service_section {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
-  top: 80px;
-  background-image: linear-gradient(to top, #009056 0%, #02c074 100%);
+}
+
+.service_section h1 {
+  position: relative;
+  color: black;
   background-size: 100%;
-  margin-bottom: 5rem;
+  margin: 1rem;
   font-size: 2.7rem;
+}
+
+.service_section h2{
+  font-weight: lighter;
+}
+
+/* services */
+
+.services__container{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 30px 0;
+}
+
+.services__card{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.service__card--container{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 0 auto;
+  background-color: #ffffff;
+  z-index: 1;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 150px;
+  position: relative;
+}
+
+.service__img--container{
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service__img{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#service__img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.service__description--container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.service__description--text{
+  height: 80%;
+  margin-left: 25px;
+}
+
+#service__icon{
+  font-size: 2.7rem;
+  background-image: linear-gradient(to top, #009056 0%, #02c074 100%);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
-
-/* services */
 
 /* Price planning */
 
