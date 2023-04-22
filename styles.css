@@ -162,12 +162,12 @@
 
 .input{
   font-weight: lighter;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .date__container{
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 5fr 8fr;
 }
 
 .date__range__container{
@@ -235,265 +235,9 @@
   width: 100%;
 }
 
-/* About us*/
+/* general css section */
 
-.about {
-  background-color: #ffffff;
-  padding: 10rem 0;
-}
-
-.about__container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  height: 90%;
-  z-index: 1;
-  width: 100%;
-  max-width: 1300px;
-  padding: 0 50px;
-}
-
-.about__content {
-  color: #fff;
-  width: 100%;
-}
-
-.about__content h1 {
-  font-size: 2rem;
-  background-color: #3bfe82;
-  background-image: linear-gradient(to top, #31f5ff 0%, #21d4fd 100%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  text-transform: uppercase;
-  margin-bottom: 32px;
-}
-
-.about__content h2 {
-  font-size: 3rem;
-  background: #ff8177; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #146aff,
-    #22d6ff
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #146aff,
-    #22d6ff
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-
-.about__content p {
-  margin-top: 1rem;
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-.about__btn {
-  font-size: 1.5rem;
-  background-image: linear-gradient(to top, #31f5ff 0%, #21d4fd 100%);
-  padding: 15px 35px;
-  border: none;
-  border-radius: 4px;
-  color: #fff;
-  margin-top: 2rem;
-  cursor: pointer;
-  position: relative;
-  transition: all 0.35s;
-  outline: none;
-}
-
-.about__btn a {
-  position: relative;
-  z-index: 2;
-  color: #fff;
-  text-decoration: none;
-}
-
-.about__btn:after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: #ff1ead;
-  transition: all 0.35s;
-  border-radius: 4px;
-}
-
-.about__btn:hover {
-  color: #fff;
-}
-
-.about__btn:hover:after {
-  width: 100%;
-}
-
-.about__img--container {
-  text-align: center;
-}
-
-.about__img--card {
-  margin: 10px;
-  height: 500px;
-  width: 500px;
-  border-radius: 4px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: #fff;
-  background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
-}
-
-.fa-calendar-day {
-  font-size: 14rem;
-}
-
-#card-2 {
-  background: #ff512f;
-  background: -webkit-linear-gradient(to right, #dd2476, #ff512f);
-  background: linear-gradient(to right, #dd2476, #ff512f);
-}
-
-/* Mobile responsive */
-
-/* Services section */
-
-.services {
-  background: #ffffff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-}
-
-.services h1 {
-  font-size: 2rem;
-  background-image: linear-gradient(to top, #31f5ff 0%, #21d4fd 100%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  text-transform: uppercase;
-  margin-bottom: 32px;
-}
-
-.services__container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.services__card {
-  position: relative;
-  margin: 1rem;
-  height: 400px;
-  width: 400px;
-  background-image: linear-gradient(
-    to bottom,
-    rgb(255, 255, 255) 0%,
-    rgb(160, 160, 160) 100%
-  );
-  background-size: cover;
-  position: relative;
-  color: #fff;
-  border-radius: 10px;
-}
-
-#service__img {
-  padding-left: 110px;
-  height: 250px;
-  width: 300px;
-}
-
-.services__card h2 {
-  background-image: linear-gradient(to top, #31f5ff 0%, #21d4fd 100%);
-  position: relative;
-  top: 30px;
-  left: 30px;
-  font-size: 1.5rem;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-
-.services__card p {
-  position: relative;
-  top: 50px;
-  left: 30px;
-  color: #141414;
-  padding-right: 30px;
-  padding-bottom: 30px;
-}
-
-.services__card:hover {
-  transform: scale(1.075);
-  transition: 0.2s ease-in;
-  cursor: pointer;
-}
-
-.services__card button {
-  color: #fff;
-  max-width: 100%;
-  padding: 10px 10px;
-  margin: 10px 120px;
-  border: none;
-  outline: none;
-  border-radius: 4px;
-  background: #6bff9a;
-  background: -webkit-linear-gradient(to right, #3aacb4, #3ad6e1, #45fcd7);
-  background: linear-gradient(to right, #3aacb4, #3ad6e1, #45fcd7);
-  position: relative;
-  bottom: 20px;
-  left: 30px;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-.services__card button:after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: #3aacb4;
-  transition: all 0.35s;
-  border-radius: 4px;
-}
-
-.services__card button:hover {
-  color: #fff;
-}
-
-.services__card button:hover:after {
-  width: 100%;
-}
-
-.service_btn a {
-  position: relative;
-  z-index: 2;
-  color: #fff;
-  text-decoration: none;
-}
-
-/* Price planning */
-
-.price__plannings {
+.section {
   background: #fff;
   display: flex;
   flex-direction: column;
@@ -501,7 +245,7 @@
   height: 100vh;
 }
 
-.price__plannings h1 {
+.section h1 {
   position: relative;
   top: 80px;
   background-image: linear-gradient(to top, #009056 0%, #02c074 100%);
@@ -513,6 +257,10 @@
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
+
+/* services */
+
+/* Price planning */
 
 .price__plannings__container {
   position: relative;
@@ -527,22 +275,33 @@
   height: 525px;
   width: 300px;
   border: 1px solid grey;
-  background-image: #fff;
+  background-image: transparent;
   background-size: cover;
   position: relative;
-  border-radius: 10px;
+  border-radius: 5px;
+}
+
+.price__plannings__card::before {
+  content: "";
+  height: 10px;
+  border-radius: 5px 5px 0 0;
+  background-image: linear-gradient(to top, #009056 0%, #02c074 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.price__plannings__card:hover {
+  transform: scale(1.05);
+  transition: 0.2s ease-in;
+  cursor: pointer;
 }
 
 .price__plannings h2 {
   position: absolute;
   top: 350px;
   left: 30px;
-}
-
-.price__plannings__card:hover {
-  transform: scale(1.075);
-  transition: 0.2s ease-in;
-  cursor: pointer;
 }
 
 .price__plannings__card h2 {

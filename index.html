@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="scroll.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +22,7 @@
                     <a href="#home" class="navbar__links">Inicio</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="#about" class="navbar__links">Video</a>
+                    <a href="#video" class="navbar__links">Video</a>
                 </li>
                 <li class="navbar__item">
                     <a href="#functionalities" class="navbar__links">Funcionalidades</a>
@@ -88,47 +86,34 @@
             </div>
         </div>
     </div>
-    <div class="about" id="about">
-        <div class="about__container">
-            <div class="about__img--container">
-                <div class="about__img--card">
-                    <i class="fas fa-calendar-day"></i>
-                </div>
-            </div>
-            <div class="about__content">
-                <h1>¿Qué hacemos?</h1>
-                <h2>Te ayudamos a agendar reuniones dónde y cuándo quieras</h2>
-                <p>Pulsa y descubre nuestras funcionalidades</p>
-                <button class="about__btn smooth-scroll"><a href="#functionalities">Funcionalidades</a></button>
-            </div>
+    <div class="section" id="video">
+        <h1>Video</h1>
+        <div class="video__container">
+
         </div>
     </div>
     <!--Services section-->
-    <div class="services" id="functionalities">       
+    <div class="section" id="functionalities">       
         <h1>FUNCIONALIDADES</h1>
         <div class="services__container">
             <div class="services__card">
-                <h2>ALQUILA UNA SALA</h2>
-                <p>Busca y alquila una sala estes donde estés</p>
-                <img src="images/world.svg" alt="pic" id="service__img">             
-                <button class="service_btn"><a>Saber más</a></button>
+                <div class="service__card--container">
+                    <div class="service_description">
+
+                    </div>
+                    <div class="service_img">
+
+                    </div>
+                </div>
             </div>
             <div class="services__card">
-                <h2>AGENDA UNA REUNIÓN</h2>
-                <p>Olvidate de las cadenas de mails para concretar fecha y hora de la reunión</p>
-                <img src="images/schedule.svg" alt="pic" id="service__img">
-                <button class="service_btn"><a>Saber más</a></button>
             </div>
             <div class="services__card">                
-                <h2>ANALIZA TUS REUNIONES</h2>
-                <p>Analiza las reuniones y comparte los temas tratados con facilidad</p>
-                <img src="images/data.svg" alt="pic" id="service__img">
-                <button class="service_btn"><a>Saber más</a></button>
             </div>
         </div>
     </div>
     <!--Subscription-plans-->
-    <div class="price__plannings" id="pricing">
+    <div class="section" id="pricing">
         <h1>PRECIOS</h1>
         <div class="price__plannings__container">
             <div class="price__plannings__card">
@@ -231,6 +216,5 @@
             </div>
         </section>
     </div>
-    <script src="app.js"></script>
 </body>
 </html>
