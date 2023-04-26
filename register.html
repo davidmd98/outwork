@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>outwork</title>
+        <link rel="stylesheet" href="register_styles.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <script type="text/javascript" src="register.js"></script>
+        <link rel="stylesheet" href="https://openlayers.org/en/v6.5.0/css/ol.css" type="text/css">
+        <script src="https://openlayers.org/en/v6.5.0/build/ol.js" type="text/javascript"></script>
+        
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="index.html#home" id="navbar__logo">outwork</a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="index.html#home" class="navbar__links">Inicio</a>
+                    </li>             
+                    <li class="navbar__item">
+                        <a href="index.html#functionalities" class="navbar__links">Funcionalidades</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="index.html#video" class="navbar__links">Video</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="index.html#pricing" class="navbar__links">Precios</a>
+                    </li>
+                    <li class="navbar__button">
+                        <a href="" class="button">Regístrate</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="register__containner">
+            <h1>Regístrate en Outwork</h1>
+            <div class="formulario-container">
+                <form action="" onsubmit="return submitClick()" method="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+    
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" required>
+
+		    <label for="city"> Municipio:</label>
+		    <input type="text" id="city" name="city" placeholder="Haz click en el mapa" required>
+
+		    <label for="cp">Código postal</label>
+		    <input type="number" id="cp" name="cp" placeholder="Haz click en el mapa" required>
+
+		    <label for="neighbourhood">Barrio</label>
+		    <input type="text" id="neighbourhood" name="neighbourhood" placeholder="Haz click en el mapa" required>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+    
+                    <label for="confirm_password">Confirmar Contraseña:</label>
+                    <input type="password" id="confirm_password" name="confirm_password" required>
+
+    
+                    <input type="submit" value="Registrarse" style="grid-column: 4/4;">
+                </form>
+            </div>
+            <div id="map" class="map"></div>
+            <div id="info"></div>
+            <script>
+            // éste código en principio tiene que estar aquí
+            // si alguien puede moverlo al archivo del script y que siga funcionando, bienvenido sea
+            var map = new ol.Map({
+                target: 'map',
+                layers: [
+                    new ol.layer.Tile({
+                        source: new ol.source.OSM()
+                    })
+                ],
+                view: new ol.View({
+                    center: ol.proj.fromLonLat([2.1134602,41.3891853]), //Campus Nord
+                    zoom: 17
+                })
+            });
+            function reverseGeocode(coords) {
+                return fetch('http://nominatim.openstreetmap.org/reverse?format=json&lon=' + coords[0] + '&lat=' + coords[1])
+                    .then(function(response) {
+                        return response.json();
+                    });
+            }
+
+            map.on('click', function (evt) {
+                var coord = ol.proj.toLonLat(evt.coordinate);
+                reverseGeocode(coord)
+                    .then(function(json) {
+                        console.log(json);
+                        document.getElementById('cp').value = json.address?.postcode ?? "";
+                        document.getElementById('city').value = json.address?.city ?? json.address?.village ?? json.address?.town;
+                        document.getElementById('neighbourhood').value = json.address?.neighbourhood ?? "";
+                    })
+                    .catch(function(error) {
+                        console.error(error);
+                    });
+            });
+
+
+        </script>
+        </div>
+
+        <div class="footer__container">
+            <div class="footer__links">
+                <div class="footer__links--wrapper">
+                    <div class="footer__link--items">
+                        <h2>Contáctanos</h2>
+                        <a href="" id="">Contacto</a>
+                        <a href="" id="">Soporte</a>
+                        <a href="" id="">Designaciones</a>
+                        <a href="" id="">Sponsors</a>
+                    </div>
+                    <div class="footer__link--items">
+                        <h2>Video</h2>
+                        <a href="" id="">Agencia</a>
+                        <a href="" id="">Influencers</a>
+                    </div>
+                </div>
+                <div class="footer__links--wrapper">
+                    <div class="footer__link--items">
+                        <h2>Sobre nosotros</h2>
+                        <a href="" id="">Casos de exito</a>
+                        <a href="" id="">Carrera</a>
+                        <a href="" id="">Inversiones</a>
+                        <a href="" id="">Terminos de servicio</a>
+                    </div>
+                    <div class="footer__link--items">
+                        <h2>Redes sociales</h2>
+                        <a href="" id="">Facebook</a>
+                        <a href="" id="">Instagram</a>
+                        <a href="" id="">Twitter</a>
+                        <a href="" id="">Linkedin</a>
+                        <a href="" id="">Youtube</a>
+                    </div>
+                </div>
+            </div>
+            <section class="social__media">
+                <div class="social__media--wrap">
+                    <div class="footer__logo">
+                        <a href="" id="footer__logo"><i></i>Outwork</a>
+                    </div>
+                    <p class="website__rigths">Outwork 2023. All rigths reserved</p>
+                    <div class="social__icons">
+                        <a class="social__icon--link" href="" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a class="social__icon--link" href="" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="social__icon--link" href="" target="_blank" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="social__icon--link" href="" target="_blank" aria-label="Youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a class="social__icon--link" href="" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
