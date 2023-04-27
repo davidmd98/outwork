@@ -486,6 +486,83 @@
   font-size: 0.8rem;
 }
 
+.download_section {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 45vh;
+  position: relative;
+}
+
+.download__container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.download__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid grey;
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+.download__card h2 {
+  font-size: 1.8rem;
+}
+
+.download__buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.download__buttons a {
+  margin: 10px;
+}
+
+.explanation {
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.webapp-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #009056;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.webapp-btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.webapp-btn:hover {
+  background-color: #02c074;
+  transition: 0.3s;
+}
+
+.users-count {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #009056;
+}
+
 .fa-check{
   color: black;
   padding-right: 5px;
