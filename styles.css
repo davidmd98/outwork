@@ -491,6 +491,7 @@
   align-items: center;
   height: 45vh;
   position: relative;
+  padding-bottom: 5px;
 }
 
 .download__container {
@@ -498,6 +499,7 @@
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 20px;
+  padding-bottom: 5px;
 }
 
 .download__card {
