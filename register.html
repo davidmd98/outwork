@@ -87,7 +87,7 @@
                 })
             });
             function reverseGeocode(coords) {
-                return fetch('http://nominatim.openstreetmap.org/reverse?format=json&lon=' + coords[0] + '&lat=' + coords[1])
+                return fetch('https://nominatim.openstreetmap.org/reverse?format=json&lon=' + coords[0] + '&lat=' + coords[1])
                     .then(function(response) {
                         return response.json();
                     });
