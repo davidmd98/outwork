@@ -7,7 +7,7 @@
 
   .navbar {
     background: #ffffff;
-    height: 80;
+    height: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +20,7 @@
   .navbar__container {
     display: flex;
     justify-content: space-between;
-    height: 80;
+    height: 90px;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
@@ -29,18 +29,16 @@
   }
   
   #navbar__logo {
-    font-size: 3rem;
     background-color: #ffffff;
-    background-image: linear-gradient(to top, #009056 0%, #02c074 100%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
+    width: 100%;
+    height: 100%;
+  }
+
+  #logo{
+    margin-left: 200px;
+    margin-top: 10px;
+    width: 15%;
+    height: 90%;
   }
   
   .fa-gem {
@@ -55,7 +53,7 @@
   }
   
   .navbar__item {
-    height: 80px;
+    height: 90px;
   }
   
   .navbar__links {
@@ -119,10 +117,6 @@
     margin: 15px;
     font-size: 4rem;
     font-weight: bold;
-}
-
-#sales__info{
-
 }
 
 .rent__containner{
