@@ -472,6 +472,10 @@
   font-size: 1.5rem;
 }
 
+#plan__conditions{
+  margin-top: 10px;
+}
+
 .functionalities__menu {
   position: absolute;
   top: 220px;
